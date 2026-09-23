@@ -1,0 +1,103 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Automation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🏠 Smart Home Automation</h1>
+        <p>Online Home Control System</p>
+    </header>
+
+    <section class="status">
+        <div class="status-box">
+            <h3>🌡 Temperature</h3>
+            <p id="temperature">26°C</p>
+        </div>
+
+        <div class="status-box">
+            <h3>💧 Humidity</h3>
+            <p>55%</p>
+        </div>
+
+        <div class="status-box">
+            <h3>🔐 Security</h3>
+            <p id="security">ACTIVE</p>
+        </div>
+    </section>
+
+    <h2>Home Devices</h2>
+
+    <section class="devices">
+
+        <div class="device">
+            <div class="icon">💡</div>
+            <h3>Living Room Light</h3>
+            <p id="lightStatus">OFF</p>
+            <button onclick="toggleDevice('light')">
+                ON / OFF
+            </button>
+        </div>
+
+        <div class="device">
+            <div class="icon">🌀</div>
+            <h3>Living Room Fan</h3>
+            <p id="fanStatus">OFF</p>
+            <button onclick="toggleDevice('fan')">
+                ON / OFF
+            </button>
+        </div>
+
+        <div class="device">
+            <div class="icon">❄️</div>
+            <h3>Air Conditioner</h3>
+            <p id="acStatus">OFF</p>
+            <button onclick="toggleDevice('ac')">
+                ON / OFF
+            </button>
+        </div>
+
+        <div class="device">
+            <div class="icon">💡</div>
+            <h3>Bedroom Light</h3>
+            <p id="bedroomStatus">OFF</p>
+            <button onclick="toggleDevice('bedroom')">
+                ON / OFF
+            </button>
+        </div>
+
+        <div class="device">
+            <div class="icon">🚪</div>
+            <h3>Main Door</h3>
+            <p id="doorStatus">LOCKED</p>
+            <button onclick="toggleDevice('door')">
+                LOCK / UNLOCK
+            </button>
+        </div>
+
+        <div class="device">
+            <div class="icon">📺</div>
+            <h3>Television</h3>
+            <p id="tvStatus">OFF</p>
+            <button onclick="toggleDevice('tv')">
+                ON / OFF
+            </button>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
